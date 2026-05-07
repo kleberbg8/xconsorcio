@@ -204,13 +204,13 @@ input, select, textarea { font-family: inherit; }
 }
 
 .logo-img {
-  height: 52px;
+  height: 42px;
   width: auto;
   display: block;
   object-fit: contain;
 }
 .logo-img--footer {
-  height: 56px;
+  height: 46px;
 }
 
 .header__nav {
