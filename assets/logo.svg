@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 160" fill="none">
+  <defs>
+    <!-- Gold gradient -->
+    <linearGradient id="gold1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#c9a84c"/>
+      <stop offset="40%"  stop-color="#f0d878"/>
+      <stop offset="70%"  stop-color="#c9a84c"/>
+      <stop offset="100%" stop-color="#8c6820"/>
+    </linearGradient>
+    <!-- Silver gradient -->
+    <linearGradient id="silver1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#e8e8f0"/>
+      <stop offset="35%"  stop-color="#ffffff"/>
+      <stop offset="65%"  stop-color="#c0c0cc"/>
+      <stop offset="100%" stop-color="#808090"/>
+    </linearGradient>
+    <!-- Silver dark face -->
+    <linearGradient id="silver2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#a0a0b0"/>
+      <stop offset="100%" stop-color="#606070"/>
+    </linearGradient>
+    <!-- Gold dark face -->
+    <linearGradient id="gold2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#a07830"/>
+      <stop offset="100%" stop-color="#604010"/>
+    </linearGradient>
+    <!-- Drop shadow -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="rgba(0,0,0,0.7)"/>
+    </filter>
+    <filter id="glowGold">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- ===== X MARK ===== -->
+  <g filter="url(#shadow)">
+    <!-- LEFT-TOP stroke of X — SILVER -->
+    <!-- Main face -->
+    <polygon points="18,18  62,18  100,72  76,72" fill="url(#silver1)"/>
+    <!-- Top bevel -->
+    <polygon points="18,18  62,18  68,26  24,26" fill="#ffffff" opacity=".6"/>
+    <!-- Right dark edge -->
+    <polygon points="62,18  68,26  104,80  100,72" fill="url(#silver2)"/>
+
+    <!-- RIGHT-TOP stroke of X — SILVER -->
+    <polygon points="110,18  154,18  116,72  92,72" fill="url(#silver1)"/>
+    <polygon points="110,18  154,18  148,26  104,26" fill="#ffffff" opacity=".5"/>
+    <polygon points="148,26  154,18  116,72  112,80" fill="url(#silver2)"/>
+
+    <!-- CENTER gap (negative space) -->
+    <polygon points="76,72  100,72  116,72  92,72  86,80  80,80" fill="#0a0a0f"/>
+
+    <!-- LEFT-BOTTOM stroke of X — GOLD -->
+    <polygon points="18,142  62,142  104,88  80,88" fill="url(#gold1)" filter="url(#glowGold)"/>
+    <!-- Bottom bevel -->
+    <polygon points="18,142  62,142  68,134  24,134" fill="#f0d060" opacity=".45"/>
+    <!-- Right dark edge -->
+    <polygon points="62,142  68,134  108,82  104,88" fill="url(#gold2)"/>
+
+    <!-- RIGHT-BOTTOM stroke of X — GOLD -->
+    <polygon points="110,142  154,142  112,88  88,88" fill="url(#gold1)" filter="url(#glowGold)"/>
+    <polygon points="110,142  154,142  148,134  104,134" fill="#f0d060" opacity=".35"/>
+    <polygon points="148,134  154,142  112,88  108,82" fill="url(#gold2)"/>
+  </g>
+
+  <!-- ===== TYPOGRAPHY ===== -->
+  <!-- "CONSÓRCIO" -->
+  <text
+    x="192" y="76"
+    font-family="'Space Grotesk','Inter',sans-serif"
+    font-size="44"
+    font-weight="300"
+    letter-spacing="10"
+    fill="#c8c8d4"
+  >CONSÓRCIO</text>
+
+  <!-- Decorative line left -->
+  <rect x="192" y="100" width="34" height="1.5" fill="#c9a84c" opacity=".8"/>
+  <!-- "INTELIGENTE" -->
+  <text
+    x="232" y="116"
+    font-family="'Space Grotesk','Inter',sans-serif"
+    font-size="22"
+    font-weight="500"
+    letter-spacing="8"
+    fill="#c9a84c"
+  >INTELIGENTE</text>
+  <!-- Decorative line right -->
+  <rect x="458" y="100" width="34" height="1.5" fill="#c9a84c" opacity=".8"/>
+</svg>

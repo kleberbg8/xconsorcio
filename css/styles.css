@@ -198,35 +198,19 @@ input, select, textarea { font-family: inherit; }
 .header__logo {
   display: flex;
   align-items: center;
-  gap: 4px;
   flex-shrink: 0;
   position: relative;
   z-index: 1;
 }
-.logo-x {
-  font-family: var(--font-title);
-  font-size: 2rem;
-  font-weight: 900;
-  background: linear-gradient(135deg, var(--gold), var(--gold-light));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  line-height: 1;
+
+.logo-img {
+  height: 52px;
+  width: auto;
+  display: block;
+  object-fit: contain;
 }
-.logo-text {
-  font-family: var(--font-title);
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--text-primary);
-}
-.logo-tag {
-  display: none;
-  font-size: .6rem;
-  font-weight: 600;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-left: 8px;
+.logo-img--footer {
+  height: 56px;
 }
 
 .header__nav {
